@@ -1,15 +1,16 @@
 import React from 'react';
+import { Notification } from 'components/Notification/Notification';
 
 export const Statistics = ({ good, neutral, bad, total = 0, percent = 0 }) => {
   return total ? (
     <div>
-      <p>{good}</p>
-      <p>{neutral}</p>
-      <p>{bad}</p>
-      <p>{total}</p>
-      <p>{percent}</p>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>Positive feedback: {percent} %</p>
     </div>
   ) : (
-    <h2>There is no feedback</h2>
+    <Notification message="There is no feedback"></Notification>
   );
 };

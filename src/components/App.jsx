@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from './App.styled';
 import { Feedback } from './Feedback/Feedback';
 import { Statistics } from './Statistics/Statistics';
+
 // import Feedback from './Feedback/Feedback';
 
 class App extends React.Component {
