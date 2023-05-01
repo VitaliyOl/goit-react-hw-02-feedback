@@ -1,6 +1,5 @@
 import React from 'react';
 import { Section } from './Section/Section';
-import { Container } from './App.styled';
 import { Feedback } from './Feedback/Feedback';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
@@ -36,7 +35,7 @@ class App extends React.Component {
     const total = this.countTotalFeedback();
 
     return (
-      <Container>
+      <>
         <Section title={'Please Leave Feedback'}>
           <Feedback
             options={Object.keys(this.state)}
@@ -57,7 +56,7 @@ class App extends React.Component {
             />
           )}
         </Section>
-      </Container>
+      </>
     );
   }
 }

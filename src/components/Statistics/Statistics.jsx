@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 export const Statistics = ({ good, neutral, bad, total, percent = 0 }) => {
   return (
     <div>
